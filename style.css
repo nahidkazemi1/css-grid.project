@@ -2,7 +2,7 @@
     padding:30px 50px;
     margin:40px 60px;
     cursor:pointer;
-    display:inline-block;
+   
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -16,7 +16,29 @@
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+.contanier{
+   display:grid;
+   grid-template-columns: repeat( auto-fill, minmax(200px, 1fr));
+   grid-gap: 0px;
+}
 
+.green{
+    grid-column: start 1;
+    grid-column:end 2;
+   
+}
+ul{
+    display: flex;
+  list-style: none; 
+
+}
+.red{
+    grid-column:2;
+    grid-auto-rows: 20px;
+}
+ .blue{
+     grid-column: start 3;
+ }
 /***********************************************************************
  *  Green Background
  **********************************************************************/
